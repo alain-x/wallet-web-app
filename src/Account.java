@@ -32,7 +32,7 @@ public class Account {
         }
 
         if (transaction.getType().equalsIgnoreCase("expense") && (balance - transaction.getAmount()) < budgetLimit) {
-            System.out.println("Warning: You are exceeding your budget limit!");
+            System.out.println("You are exceeding your budget limit!");
         }
 
         transactions.add(transaction);
