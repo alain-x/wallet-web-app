@@ -10,15 +10,15 @@ public class Test {
             System.out.println("\n Menu:");
             System.out.println("1) Create Account\n");
             System.out.println("2) Add Transaction\n");
-            System.out.println("3) Display List Transactions\n");
+            System.out.println("3) Display All Transactions\n");
             System.out.println("4) Generate Report\n");
             System.out.println("5) Set Budget Limit\n");
-            System.out.println("6) List Accounts\n");
+            System.out.println("6) Display All Accounts\n");
             System.out.println("7) Exit\n");
             System.out.print("Choose an option: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -41,7 +41,7 @@ public class Test {
                     String category = scanner.nextLine();
                     System.out.print("Enter amount: ");
                     double amount = scanner.nextDouble();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter description: ");
                     String description = scanner.nextLine();
                     System.out.print("Enter date (YYYY-MM-DD): ");
