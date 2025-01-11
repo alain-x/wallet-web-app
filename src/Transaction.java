@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public class Transaction {
     private String account;
-    private String type; // "income" or "expense"
+    private String type;
     private String category;
     private double amount;
     private String description;
