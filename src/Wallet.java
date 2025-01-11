@@ -1,6 +1,5 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList; 
 
 public class Wallet {
     private ArrayList<Account> accounts;
@@ -25,7 +24,7 @@ public class Wallet {
 
     public void listAccounts() {
         if (accounts.isEmpty()) {
-            System.out.println("No accounts created yet.");
+            System.out.println("No accounts created");
         } else {
             System.out.println("Accounts:");
             for (Account account : accounts) {
@@ -37,9 +36,9 @@ public class Wallet {
     public void listTransactions(Account account) {
         ArrayList<Transaction> transactions = account.getTransactions();
         if (transactions.isEmpty()) {
-            System.out.println("No transactions for this account.");
+            System.out.println("No transactions this account.");
         } else {
-            System.out.println("Transactions for account: " + account.getName());
+            System.out.println("Transactions account: " + account.getName());
             for (Transaction transaction : transactions) {
                 System.out.println(transaction);
             }
