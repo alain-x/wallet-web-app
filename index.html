@@ -353,13 +353,13 @@
       let budgetLimit = null;
 
       function updateSummary() {
-        document.getElementById("income").textContent = `$${totalIncome.toFixed(
+        document.getElementById("income").textContent = `$RWF{totalIncome.toFixed(
           2
         )}`;
         document.getElementById(
           "expenses"
-        ).textContent = `$${totalExpenses.toFixed(2)}`;
-        document.getElementById("balance").textContent = `$${(
+        ).textContent = `$RWF{totalExpenses.toFixed(2)}`;
+        document.getElementById("balance").textContent = `$RWF{(
           totalIncome - totalExpenses
         ).toFixed(2)}`;
       }
