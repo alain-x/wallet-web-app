@@ -14,5 +14,5 @@ A Java wallet application that allows users to:
 1. **Clone the Repository**:
    ```bash
 
-git clone https://github.com/alain-x/wallet-web-app.git
-cd wallet-web-app
+   git clone https://github.com/alain-x/wallet-web-app.git
+   cd wallet-web-app
