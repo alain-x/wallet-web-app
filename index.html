@@ -353,16 +353,11 @@
       let budgetLimit = null;
 
       function updateSummary() {
-        document.getElementById("income").textContent = `$RWF{totalIncome.toFixed(
-          2
-        )}`;
-        document.getElementById(
-          "expenses"
-        ).textContent = `$RWF{totalExpenses.toFixed(2)}`;
-        document.getElementById("balance").textContent = `$RWF{(
-          totalIncome - totalExpenses
-        ).toFixed(2)}`;
-      }
+  document.getElementById("income").textContent = `RWF ${totalIncome.toFixed(2)}`;
+  document.getElementById("expenses").textContent = `RWF ${totalExpenses.toFixed(2)}`;
+  document.getElementById("balance").textContent = `RWF ${(totalIncome - totalExpenses).toFixed(2)}`;
+  }
+
 
       document
         .getElementById("transaction-form")
