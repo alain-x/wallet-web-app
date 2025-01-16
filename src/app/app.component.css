@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background: linear-gradient(to right, #007bff, #566677);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.account-list,
+.transaction-list,
+.budget-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.account-item,
+.transaction-item,
+.budget-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #007bff;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.fetch-button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.fetch-button:hover {
+  background-color: #218838;
+}
+
+/* Flex layout for Add Transaction and Add Budget */
+.form-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sections stack on small screens */
+@media (max-width: 900px) {
+  .form-sections {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    margin-bottom: 20px;
+  }
+}
