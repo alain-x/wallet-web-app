@@ -4,7 +4,15 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
-
+button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #566677;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .navbar {
   background: linear-gradient(to right, #007bff, #566677);
   color: white;
