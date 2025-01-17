@@ -10,7 +10,8 @@
       <ul class="account-list">
         <li class="account-item" *ngFor="let account of accounts">
           {{ account.accountName }} - {{ account.accountType }} - Balance:
-          {{ account.balance | currency }}
+          {{ account.balance | currency : "RWF" : "symbol" }}
+          <button (click)="editAccount(account)">Edit</button>
         </li>
       </ul>
 
@@ -142,8 +143,10 @@
       </button>
       <ul class="transaction-list">
         <li class="transaction-item" *ngFor="let transaction of transactions">
-          {{ transaction.description }} - {{ transaction.amount | currency }} -
-          Category: {{ transaction.category }} - Type: {{ transaction.type }}
+          {{ transaction.description }} -
+          {{ transaction.amount | currency : "RWF" : "symbol" }} - Category:
+          {{ transaction.category }} - Type: {{ transaction.type }}
+          <button (click)="editTransaction(transaction)">Edit</button>
         </li>
       </ul>
     </section>
@@ -154,8 +157,10 @@
       <ul class="budget-list">
         <li class="budget-item" *ngFor="let budget of budgets">
           Category: {{ budget.category }} - Limit:
-          {{ budget.limitAmount | currency }} - Current Spending:
-          {{ budget.currentSpending | currency }}
+          {{ budget.limitAmount | currency : "RWF" : "symbol" }} - Current
+          Spending:
+          {{ budget.currentSpending | currency : "RWF" : "symbol" }}
+          <button (click)="editBudget(budget)">Edit</button>
         </li>
       </ul>
     </section>
