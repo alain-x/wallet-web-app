@@ -13,16 +13,14 @@ The live backend for this project is hosted here:
 
 You can test the backend functionality, including managing **accounts**, **transactions**, and **budgets** using the live backend link above.
 
-
-### Backend Repository
-The backend code repository can be found here:  
-[wallet-App](https://github.com/alain-x/wallet-App)
-
 ## How to Start the Project
 
 ### Prerequisites
 - A **code editor** (IntelliJ IDEA or VS Code).
 - **Git** for version control.
+- **JDK 11** for Spring Boot.
+- **Maven** for managing dependencies in Spring Boot.
+- **Node.js and npm** for Angular.
 
 ### Installation
 1. **Clone the Repository Frontend**:
