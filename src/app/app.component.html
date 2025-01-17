@@ -4,7 +4,6 @@
   </header>
 
   <div class="container">
-    <!-- Accounts Section -->
     <section>
       <h2>Accounts</h2>
       <ul class="account-list">
@@ -47,9 +46,7 @@
       </form>
     </section>
 
-    <!-- Flex Layout for Transaction and Budget -->
     <section class="form-sections">
-      <!-- Left side: Add Transaction -->
       <div class="left-side">
         <h2>Add Transaction</h2>
         <form (ngSubmit)="addTransaction()">
@@ -86,7 +83,6 @@
               required
             />
           </div>
-          <!-- Add the transaction type select -->
           <div class="form-group">
             <label for="type">Transaction Type</label>
             <select
@@ -106,7 +102,6 @@
         </form>
       </div>
 
-      <!-- Right side: Add Budget -->
       <div class="right-side">
         <h2>Add Budget</h2>
         <form (ngSubmit)="addBudget()">
@@ -132,7 +127,6 @@
       </div>
     </section>
 
-    <!-- Transactions Section -->
     <section>
       <h2>Transactions</h2>
       <button class="fetch-button" (click)="fetchTransactions('category1')">
@@ -148,7 +142,6 @@
       </ul>
     </section>
 
-    <!-- Budgets Section -->
     <section>
       <h2>Budgets</h2>
       <ul class="budget-list">
@@ -157,7 +150,6 @@
           {{ budget.limitAmount | currency : "RWF" : "symbol" }} - Current
           Spending:
           {{ budget.currentSpending | currency : "RWF" : "symbol" }}
-          <button (click)="editBudget(budget)">Edit</button>
         </li>
       </ul>
     </section>
