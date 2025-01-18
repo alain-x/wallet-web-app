@@ -5,7 +5,7 @@ A Java wallet application that allows users to:
 - Set budget limits.
 - Generate reports based on date ranges. 
 
-Live Demo: [https://animated-semifreddo-2f2d0b.netlify.app/](https://animated-semifreddo-2f2d0b.netlify.app/)
+Live Demo: [ https://sunny-melomakarona-a0bff4.netlify.app/]( https://sunny-melomakarona-a0bff4.netlify.app/)
 
 ## Live Backend
 The live backend for this project is hosted here:  
