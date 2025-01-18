@@ -228,13 +228,11 @@ export class AppComponent implements OnInit {
   editTransaction(transaction: any) {
     this.newTransaction = { ...transaction };
   }
-
-  // Success and Error Message Handlers
   showSuccessMessage(message: string) {
-    alert(message); // You can replace alert with a UI notification component
+    alert(message);
   }
 
   showErrorMessage(message: string) {
-    alert(message); // Replace this with a UI error notification if needed
+    alert(message);
   }
 }

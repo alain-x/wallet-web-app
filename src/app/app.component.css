@@ -102,7 +102,6 @@ button[type="submit"]:hover {
   background-color: #218838;
 }
 
-/* Flex layout for Add Transaction and Add Budget */
 .form-sections {
   display: flex;
   justify-content: space-between;
@@ -118,7 +117,6 @@ button[type="submit"]:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Make sections stack on small screens */
 @media (max-width: 900px) {
   .form-sections {
     flex-direction: column;
